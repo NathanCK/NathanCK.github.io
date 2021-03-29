@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+#projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(480px, 500px);
+    justify-content: space-evenly;
+    justify-items: center;
+    margin: auto 80px 50px 80px;
+
+    margin-top: 10%;
+}
+
+.external::after {
+    content: "\e89e";
+    font-size: 20px;
+    color: rgba(30, 30, 214, 0.815);
+    position: relative;
+    top: 4px;
+}
+
+.project-description {
+    padding: 15px;
+    text-align: justify;
+    line-height: 1.6;
+    font-size: larger;
+}
+
+.project-image {
+    margin: 0 30px;
+    margin-top: 100px;
+
+}
+
+.project-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'New Tegomin',
+    serif;
+    font-weight: bold;
+}
+
+.flip-container {
+    perspective: 1000px;
+    border: 1px solid rgb(41, 28, 116);
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    border-radius: 75px;
+    width: 320px;
+    height: 480px;
+}
+
+.flipper {
+    transition: 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+}
+
+.front {
+    z-index: 2;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+}
