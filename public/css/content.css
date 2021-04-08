@@ -1,0 +1,57 @@
+#myselfImg {
+    border-radius: 75px;
+    height: 600px;
+}
+
+#content {
+    margin: 100px;
+    display: grid;
+    grid-template-columns: 1fr minmax(min-content, 1fr);
+    grid-template-rows: min-content;
+    float: center;
+    gap: 60px;
+    justify-items: center;
+}
+
+#myselfImg {
+    grid-column: 1/2;
+}
+
+#myInfo {
+    grid-column: 2/3;
+    float: center;
+}
+
+#buttons {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: min-content min-content;
+    grid-template-rows: min-content;
+    gap: 100px;
+    float: center;
+    justify-items: center;
+    padding-top: 150px;
+}
+
+#myPara {
+    padding-top: 50px;
+}
+
+#myPara, #resume {
+    grid-column: 1/-1;
+}
+
+#linkedIn, #github {
+    height: 120px;
+}
+
+#resume {
+    border-radius: 75px;
+    height: 55px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#resume:hover {
+    background-color: white;
+}

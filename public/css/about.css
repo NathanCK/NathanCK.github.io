@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+#about-content {
+    /* width: 75%; */
+    margin: 50px 200px;
+    
+}
+
+.about-section {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: 50px;
+}
+
+#why-frontend {
+    grid-template-columns: min-content 1fr;
+}
+
+#next-step {
+    grid-template-columns: 1fr min-content;
+}
+
+#why-frontend-answer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#first-word-Why {
+    color: rgb(185, 24, 24);
+}
+
+#first-word-Next {
+    color: rgb(17, 74, 158);
+}
+
+.about-text {
+    font-size: larger;
+    line-height: 2;
+    font-family: 'Roboto Mono',
+    monospace;
+}

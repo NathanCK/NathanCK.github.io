@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/NathanCK.github.io/static/js/main.474e769c.chunk.js",
+    "main.js.map": "/NathanCK.github.io/static/js/main.474e769c.chunk.js.map",
+    "runtime-main.js": "/NathanCK.github.io/static/js/runtime-main.06ea8ba9.js",
+    "runtime-main.js.map": "/NathanCK.github.io/static/js/runtime-main.06ea8ba9.js.map",
+    "static/js/2.bc750972.chunk.js": "/NathanCK.github.io/static/js/2.bc750972.chunk.js",
+    "static/js/2.bc750972.chunk.js.map": "/NathanCK.github.io/static/js/2.bc750972.chunk.js.map",
+    "index.html": "/NathanCK.github.io/index.html",
+    "static/js/2.bc750972.chunk.js.LICENSE.txt": "/NathanCK.github.io/static/js/2.bc750972.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.06ea8ba9.js",
+    "static/js/2.bc750972.chunk.js",
+    "static/js/main.474e769c.chunk.js"
+  ]
+}
