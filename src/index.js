@@ -19,7 +19,7 @@ const Main = () => {
     <HashRouter id="page">
       <MyHeader></MyHeader>
       <div className="content">
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/experience" component={MyExperience} />
         <Route path="/projects" component={MyProjects} />
         <Route path="/about" component={About} />

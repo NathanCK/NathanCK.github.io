@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/NathanCK/NathanCK.github.io/issues"
   },
-  "homepage": "https://nathanck.github.io/NathanCK.github.io",
+  "homepage": "https://nathanck.github.io/index.html",
   "dependencies": {
     "babel-cli": "latest",
     "babel-preset-react-app": "latest",

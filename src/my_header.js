@@ -15,7 +15,7 @@ const MyHeader = (props) => {
     <header>
       <div id="NameAndIcon">Kin (Nathan) Chan</div>
       <div id="nav">
-        <NavItem subTitle={"Home"} link={"/home"} />
+        <NavItem subTitle={"Home"} link={"/"} />
         <NavItem subTitle={"Experience"} link={"/experience"} />
         <NavItem subTitle={"Projects"} link={"/projects"} />
         <NavItem subTitle={"About"} link={"/about"} />
