@@ -4,7 +4,7 @@
   "description": "",
   "main": "like_button.js",
   "scripts": {
-    "start": "webpack serve --mode development",
+    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"

@@ -1,5 +1,6 @@
 "use strict";
 import React from "react";
+import myWebsiteImg from "./img/home-screen-shot.jpg";
 
 const MyProjects = () => {
   return (
@@ -40,11 +41,7 @@ const MyProjects = () => {
       <div className="flip-container">
         <div className="flipper">
           <div className="front">
-            <img
-              src="/img/home-screen-shot.jpg"
-              className="project-image"
-              height="150px"
-            />
+            <img src={myWebsiteImg} className="project-image" height="150px" />
             <div className="project-title">My Website</div>
           </div>
           <div className="back">

@@ -1,10 +1,13 @@
 "use strict";
 import React from "react";
+import myselfImg from "./img/gumwall.jpeg";
+import linkedInIcon from "./img/icons/LI-In-Bug.png";
+import githubIcon from "./img/icons/GitHub-Mark-120px-plus.png";
 
 const Home = () => {
   return (
     <div id="content">
-      <img id="myselfImg" src="./img/gumwall.jpeg" />
+      <img id="myselfImg" src={myselfImg} />
       <div id="myInfo">
         <div id="myPara">
           <p>Welcome to Nathan's website.</p>
@@ -27,18 +30,10 @@ const Home = () => {
             </button>
           </a>
           <a href="https://www.linkedin.com/in/kinnathanchan/" target="_blank">
-            <img
-              className="linkButton"
-              id="linkedIn"
-              src="./img/icons/LI-In-Bug.png"
-            />
+            <img className="linkButton" id="linkedIn" src={linkedInIcon} />
           </a>
           <a href="https://github.com/NathanCK" target="_blank">
-            <img
-              className="linkButton"
-              id="github"
-              src="./img/icons/GitHub-Mark-120px-plus.png"
-            />
+            <img className="linkButton" id="github" src={githubIcon} />
           </a>
         </div>
       </div>

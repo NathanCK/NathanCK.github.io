@@ -8,6 +8,11 @@ import Home from "./home";
 import MyExperience from "./my_experience";
 import MyProjects from "./my_projects";
 import About from "./about";
+import "./css/about.css";
+import "./css/content.css";
+import "./css/experience.css";
+import "./css/header.css";
+import "./css/projects.css";
 
 const Main = () => {
   return (

@@ -1,5 +1,7 @@
 "use strict";
 import React from "react";
+import thanos from "./img/fullstack-dev-joke.jpg";
+import manyDevices from "./img/many-for-web-dev.jpg";
 
 const About = () => {
   return (
@@ -19,7 +21,7 @@ const About = () => {
       </p>
       <div id="why-frontend" className="about-section">
         <div>
-          <img id="thanos" src="/img/fullstack-dev-joke.jpg"></img>
+          <img id="thanos" src={thanos}></img>
         </div>
         <p id="why-frontend-answer" className="about-text">
           As a Software Developer who mainly developed a backend application, I
@@ -49,7 +51,7 @@ const About = () => {
           this website.
         </p>
         <div>
-          <img id="many-devices" src="/img/many-for-web-dev.jpg"></img>
+          <img id="many-devices" src={manyDevices}></img>
         </div>
       </div>
     </div>
