@@ -4,13 +4,17 @@ import { NavLink } from "react-router-dom";
 
 const NavItem = (props) => {
   return (
-    <NavLink className={"nav-item"} to={props.link} replace>
+    <NavLink className={"nav-item"} exact to={props.link} replace>
       {props.subTitle}
     </NavLink>
   );
 };
 
 const MyHeader = (props) => {
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <header>
       <div id="NameAndIcon">Kin (Nathan) Chan</div>

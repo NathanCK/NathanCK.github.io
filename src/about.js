@@ -1,28 +1,79 @@
 "use strict";
 import React from "react";
+import blogs from "./about_contents";
 import thanos from "./img/fullstack-dev-joke.jpg";
-import manyDevices from "./img/many-for-web-dev.jpg";
 
-const About = () => {
+class RandomColorPicker {
+  constructor() {
+    this.pickedColors = [];
+  }
+
+  static pickRandomColor() {
+    return "#" + Math.floor(Math.random() * 16777215).toString(16);
+  }
+
+  pickUniqueRandomColor() {
+    let color = RandomColorPicker.pickRandomColor();
+    while (this.pickedColors.includes(color)) {
+      color = RandomColorPicker.pickRandomColor();
+    }
+
+    this.pickedColors.push(color);
+    return color;
+  }
+}
+
+const BlogContainer = (props) => {
+  const colorPicker = new RandomColorPicker();
+
+  const pickAnUniqueColor = () => colorPicker.pickUniqueRandomColor();
   return (
-    <div id="about-content">
-      <p className="about-text">
-        This website used HTML, CSS, and Javascript as the main stacks. Although
-        it heavily used CSS for the effect, including the hover over effect and
-        the flipping effect, I used Javascript as a “simple database” to store
-        my experience information and to create the HTML elements, so that it is
-        easier to manipulate and work with. The project is definitely not ended
-        yet, and it still has a long way to go.
-      </p>
+    <div>
+      <div className="about-section">
+        <p className="subtitle">
+          {" "}
+          <span style={{ color: pickAnUniqueColor() }}>Current</span> Status (
+          {<span style={{ color: "red" }}>{props.content.date}</span>}) :
+        </p>
+
+        <div>
+          <div>
+            <img className="paragraphImg" src={props.content.current.img}></img>
+          </div>
+          <p className="about-text">{props.content.current.text}</p>
+        </div>
+      </div>
+
+      <div className="about-section">
+        <p className="subtitle">
+          {" "}
+          <span style={{ color: pickAnUniqueColor() }}>Next</span> step for this
+          website:
+        </p>
+        <div>
+          <div>
+            <img className="paragraphImg" src={props.content.next.img}></img>
+          </div>
+          <p className="about-text">{props.content.next.text}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const TopSection = (props) => {
+  return (
+    <div id="top-section">
       <p className="subtitle">
         {" "}
-        <span id="first-word-Why">Why</span> I want to explore the frontend
-        world?
+        <span style={{ color: props.pickColor() }}>Why</span> I want to explore
+        the frontend world?
       </p>
-      <div id="why-frontend" className="about-section">
+      <div>
         <div>
-          <img id="thanos" src={thanos}></img>
+          <img className="paragraphImg" src={thanos}></img>
         </div>
+
         <p id="why-frontend-answer" className="about-text">
           As a Software Developer who mainly developed a backend application, I
           have deeper feeling that people are not really sensitive to a pure
@@ -33,26 +84,56 @@ const About = () => {
           JSON or raw response. Fullstack is my ultimate goal now.
         </p>
       </div>
+    </div>
+  );
+};
 
-      <p className="subtitle">
-        {" "}
-        <span id="first-word-Next">Next</span> step for this website:
-      </p>
+const About = () => {
+  const [blogIndex, setBlogIndex] = React.useState(0);
+  const colorPicker = new RandomColorPicker();
 
-      <div id="next-step" className="about-section">
-        <p className="about-text">
-          This is yet a completely responsive website, which means under some
-          specific resolution, especially for mobile, the website is not going
-          to build well. Also, graphs are not optimized for mobile environments
-          yet. Currently, I started to learn React.js as one of the most popular
-          frontend framework, and I will try to apply what I learn on my website
-          for a more responsive and better solution. Also, I am going to add
-          more information about myself, so anyone can know better about me on
-          this website.
-        </p>
-        <div>
-          <img id="many-devices" src={manyDevices}></img>
-        </div>
+  const pickAnUniqueColor = () => colorPicker.pickUniqueRandomColor();
+
+  const hasNextBlog = () => blogIndex + 1 < blogs.length;
+  const hasPrevBlog = () => blogIndex - 1 >= 0;
+
+  const loadNextBlog = () => {
+    if (hasNextBlog()) {
+      setBlogIndex(blogIndex + 1);
+    }
+  };
+
+  const loadPrevBlog = () => {
+    if (hasPrevBlog()) {
+      setBlogIndex(blogIndex - 1);
+    }
+  };
+
+  return (
+    <div id="about-content">
+      <TopSection pickColor={pickAnUniqueColor} />
+
+      <div id="blog-section-container">
+        <button
+          className="navigate-button"
+          style={{ visibility: hasPrevBlog() ? "visible" : "hidden" }}
+          onClick={loadPrevBlog}
+        >
+          <span className="material-icons">navigate_before</span>
+        </button>
+
+        <BlogContainer
+          id="blog-content-container"
+          content={blogs[blogIndex]}
+        ></BlogContainer>
+
+        <button
+          className="navigate-button"
+          style={{ visibility: hasNextBlog() ? "visible" : "hidden" }}
+          onClick={loadNextBlog}
+        >
+          <span className="material-icons">navigate_next</span>
+        </button>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 #myselfImg {
     border-radius: 75px;
-    height: 600px;
+    width: 450px;
+    grid-column: 1/2;
 }
 
 #content {
@@ -11,10 +12,6 @@
     float: center;
     gap: 60px;
     justify-items: center;
-}
-
-#myselfImg {
-    grid-column: 1/2;
 }
 
 #myInfo {
@@ -54,4 +51,42 @@
 
 #resume:hover {
     background-color: white;
+}
+
+@media only screen and (max-width: 375px) {
+    #myselfImg {
+        width: 300px;
+        grid-column: initial;
+        margin-left: 27.5px;
+    }
+
+    #content {
+        margin: 10px;
+        margin-top: 100px;
+        width: auto;
+        grid-template-columns: min-content;
+        gap: 0;
+        display: inline-block;
+        text-align: initial;
+    }
+
+    #myInfo {
+        grid-column: initial;
+    }
+
+    #myPara {
+        padding-top: 10px;
+        grid-column: initial;
+    }
+
+    #buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    #linkedIn,
+    #github {
+        height: 50px;
+    }
 }

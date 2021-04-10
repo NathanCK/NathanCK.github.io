@@ -87,3 +87,10 @@
 .back {
     transform: rotateY(180deg);
 }
+
+@media only screen and (max-width: 375px) {
+    #projects-container {
+        margin-top: 90px;
+        grid-template-columns: max-content;
+    }
+}

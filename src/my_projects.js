@@ -1,5 +1,6 @@
 "use strict";
 import React from "react";
+import { NavLink } from "react-router-dom";
 import myWebsiteImg from "./img/home-screen-shot.jpg";
 
 const MyProjects = () => {
@@ -53,7 +54,12 @@ const MyProjects = () => {
               myself. Also, before the implementation, I used Adobe XD to
               breanstorm the design. For more detail, please visit the About
               page{" "}
-              <a href="/about.html" className="material-icons external"></a>
+              <NavLink
+                exact
+                to="/about"
+                className="material-icons external"
+                replace
+              ></NavLink>
             </p>
           </div>
         </div>

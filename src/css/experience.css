@@ -8,8 +8,7 @@
     color: inherit;
 }
 
-.description:hover>.company-info .external::after,
-.description.hover>.company-info .external::after {
+.description:hover>.company-info .external::after{
     content: "\e89e";
     font-size: 20px;
     color: rgba(30, 30, 214, 0.815);
@@ -122,9 +121,32 @@
     align-content: center;
     font-size: xx-large;
     font-family: 'Dancing Script',
-    cursive;
+    'cursive';
 }
 
 .description>.company-info {
     margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .experience {
+        grid-template-columns: 1fr;
+        margin: 1px;
+        margin-top: 100px;
+        
+    }
+
+    .description>.title {
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .description {
+        padding: 20px 20px 20px 20px;
+        box-shadow: 3px 5px 5px rgba(204, 25, 25, 0.705);
+    }
+
+    .hover-me {
+        display: none;
+    }
 }

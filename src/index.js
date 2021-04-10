@@ -2,7 +2,7 @@
 
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 import MyHeader from "./my_header";
 import Home from "./home";
 import MyExperience from "./my_experience";
