@@ -69845,7 +69845,7 @@ return A.O(null,r)}})
 return A.P($async$$0,r)},
 $S:30}
 A.S0.prototype={
-G(a){return A.aoP(B.o,null,A.aoP(null,B.E4,null,32),36)}}
+G(a){return A.aoP(B.o,null,A.aoP(null,B.E3,null,32),36)}}
 A.S_.prototype={
 G(a){var s=A.dd(a,null,t.l).w
 return new A.Eb(A.De(20),A.apN("assets/images/gum_wall.jpeg",s.a.b*0.5,null),null)}}
@@ -73040,7 +73040,7 @@ B.E1=new A.p9(2,"paused")
 B.E2=new A.p9(3,"detached")
 B.hW=new A.uv(0,"polite")
 B.hX=new A.uv(1,"assertive")
-B.E4=new A.ig("assets/images/gum_wall.jpeg",null,null)
+B.E3=new A.ig("assets/images/gum_wall.jpeg",null,null)
 B.z=new A.pf(0,"up")
 B.ag=new A.pf(1,"right")
 B.x=new A.pf(2,"down")
@@ -73713,14 +73713,14 @@ B.iH=new A.qc(0,"repeat")
 B.mv=new A.qc(1,"repeatX")
 B.mw=new A.qc(2,"repeatY")
 B.c2=new A.qc(3,"noRepeat")
-B.E7=new A.ig("icons/OATI_icon.png",null,null)
-B.IM=new A.iw(B.E7,null,null,null)
-B.E3=new A.ig("icons/Signify_icon.png",null,null)
-B.IN=new A.iw(B.E3,null,null,null)
-B.E5=new A.ig("icons/umn_goldy_icon.png",null,null)
+B.E6=new A.ig("assets/icons/DeFiner_icon.png",null,null)
+B.IM=new A.iw(B.E6,null,null,null)
+B.E7=new A.ig("assets/icons/OATI_icon.png",null,null)
+B.IN=new A.iw(B.E7,null,null,null)
+B.E5=new A.ig("assets/icons/Signify_icon.png",null,null)
 B.IO=new A.iw(B.E5,null,null,null)
-B.E6=new A.ig("icons/DeFiner_icon.png",null,null)
-B.IP=new A.iw(B.E6,null,null,null)
+B.E4=new A.ig("assets/icons/umn_goldy_icon.png",null,null)
+B.IP=new A.iw(B.E4,null,null,null)
 B.IR=new A.fR(0,0.1,B.av)
 B.IS=new A.fR(0.125,0.25,B.av)
 B.IT=new A.fR(0.6,1,B.av)
@@ -77522,7 +77522,7 @@ r($,"aMO","anP",()=>A.aH(["en_US",new A.ahP(),"zh_Hant-HK",new A.ahQ()],t.N,A.a5
 s($,"aOg","axk",()=>new A.IQ(A.aqm(A.aJ3())))
 s($,"aOh","axl",()=>new A.IP(A.aql(A.aJ4())))
 s($,"aOz","X7",()=>{var q=null,p="Flutter, Dart"
-return A.a([A.Mv(1,A.jF(2016,9,1,0,0,0,0),A.jF(2019,12,1,0,0,0,0),"BA in Computer Science",B.IO,"\u2022 Graduated with GPA 3.360.\n\u2022 Have taken fundamental courses, including Algorithms & Data Structures, and Program Design & Development.\n\u2022 Have taken advanced level courses, such as Operating Systems, and Computer Network.",q,"University of Minnesota - Twin Cities",B.mu),A.Mv(2,A.jF(2019,10,1,0,0,0,0),A.jF(2020,3,1,0,0,0,0),"Software Engineer Internship",B.IP,"\u2022 Designed, implemented, and refined prototypes for a multitude of unique user interfaces, inspiring action around the results.\n\u2022 Used technology to solve straightforward user interface and UX problems, seeking input and guidance from team members.\n\u2022 Turned a defined software and UX design into code, and delivered it on schedule using languages, libraries, and rendering technologies (e.g. JavaScript, Node.js, Angular, HTML, CSS).","HTML, CSS, Javascript, and Angular","DeFiner Inc.",q),A.Mv(3,A.jF(2020,3,1,0,0,0,0),A.jF(2021,1,1,0,0,0,0),"Software Developer",B.IM,"\u2022 Delivered new features and maintain the functionality of predictive modeling system for energy usage using C# and ASP.Net 5.\n\u2022 Implemented distributed in-memory caches to reduce the heavy reliability of SQL database in run-time using Apache Ignite.\n\u2022 Designed RESTful API to handle multiple requests simultaneously using MVC design pattern and Json.NET/System.Text.Json.\n\u2022 Wrote back-end unit tests and create a test program to ensure the functionality and correctness of the application using NUnit.\n\u2022 Used Microsoft SQL Server to consume data from and insert data rows into SQL database tables in the application.\n\u2022 Managed asynchronous work using TFS for version controlling.","C#, .NET Core 5, and Microsoft SQL Server","Open Access Technology International, Inc.",q),A.Mv(4,A.jF(2021,7,1,0,0,0,0),A.jF(2021,12,1,0,0,0,0),"Software Engineer",q,"\u2022 Implemented new features and maintained the functionality of production level of iOS and Android point-of-sale(P.O.S) app and an inventory management app using Flutter, Dart, and BLoC design pattern.\n\u2022 Designed and delivered new features and maintain the back-end server to fulfill the need of the mobile P.O.S app using .Net framework.\n\u2022 Cooperated with engineers, support team and BA to complete Statement of Work and solve incidents from users using Waterfall methodology.\n\u2022 Designed unique user interfaces and created mock-up screens on Figma.\n\u2022 Integrated front-end and back-end elements using RESTful api.\n\u2022 Interacted with a third-party iOS app for payment purpose.",p,"Computer And Technologies Holdings Limited",q),A.Mv(5,A.jF(2022,1,1,0,0,0,0),A.jF(2023,1,1,0,0,0,0),"Mobile Development Engineer",B.IN,"\u2022 Revamped the original WiZ app that controls WiZ Connected smart devices using Flutter technology for cross-platform purpose.\n\u2022 Implemented new UI and features for over 10K+ users.\n\u2022 Used BLoC design pattern as the foundation of development process.\n\u2022 Wrote Flutter unit tests to ensure the functionality of the WiZ V2 app.\n\u2022 Experienced with RESTful API concepts and SQLite database.\n\u2022 Involved in an agile development environment with different teams for sprint planning, refinement, grooming, and daily stand-up meetings.",p,"Signify",q)],A.a5("t<md>"))})
+return A.a([A.Mv(1,A.jF(2016,9,1,0,0,0,0),A.jF(2019,12,1,0,0,0,0),"BA in Computer Science",B.IP,"\u2022 Graduated with GPA 3.360.\n\u2022 Have taken fundamental courses, including Algorithms & Data Structures, and Program Design & Development.\n\u2022 Have taken advanced level courses, such as Operating Systems, and Computer Network.",q,"University of Minnesota - Twin Cities",B.mu),A.Mv(2,A.jF(2019,10,1,0,0,0,0),A.jF(2020,3,1,0,0,0,0),"Software Engineer Internship",B.IM,"\u2022 Designed, implemented, and refined prototypes for a multitude of unique user interfaces, inspiring action around the results.\n\u2022 Used technology to solve straightforward user interface and UX problems, seeking input and guidance from team members.\n\u2022 Turned a defined software and UX design into code, and delivered it on schedule using languages, libraries, and rendering technologies (e.g. JavaScript, Node.js, Angular, HTML, CSS).","HTML, CSS, Javascript, and Angular","DeFiner Inc.",q),A.Mv(3,A.jF(2020,3,1,0,0,0,0),A.jF(2021,1,1,0,0,0,0),"Software Developer",B.IN,"\u2022 Delivered new features and maintain the functionality of predictive modeling system for energy usage using C# and ASP.Net 5.\n\u2022 Implemented distributed in-memory caches to reduce the heavy reliability of SQL database in run-time using Apache Ignite.\n\u2022 Designed RESTful API to handle multiple requests simultaneously using MVC design pattern and Json.NET/System.Text.Json.\n\u2022 Wrote back-end unit tests and create a test program to ensure the functionality and correctness of the application using NUnit.\n\u2022 Used Microsoft SQL Server to consume data from and insert data rows into SQL database tables in the application.\n\u2022 Managed asynchronous work using TFS for version controlling.","C#, .NET Core 5, and Microsoft SQL Server","Open Access Technology International, Inc.",q),A.Mv(4,A.jF(2021,7,1,0,0,0,0),A.jF(2021,12,1,0,0,0,0),"Software Engineer",q,"\u2022 Implemented new features and maintained the functionality of production level of iOS and Android point-of-sale(P.O.S) app and an inventory management app using Flutter, Dart, and BLoC design pattern.\n\u2022 Designed and delivered new features and maintain the back-end server to fulfill the need of the mobile P.O.S app using .Net framework.\n\u2022 Cooperated with engineers, support team and BA to complete Statement of Work and solve incidents from users using Waterfall methodology.\n\u2022 Designed unique user interfaces and created mock-up screens on Figma.\n\u2022 Integrated front-end and back-end elements using RESTful api.\n\u2022 Interacted with a third-party iOS app for payment purpose.",p,"Computer And Technologies Holdings Limited",q),A.Mv(5,A.jF(2022,1,1,0,0,0,0),A.jF(2023,1,1,0,0,0,0),"Mobile Development Engineer",B.IO,"\u2022 Revamped the original WiZ app that controls WiZ Connected smart devices using Flutter technology for cross-platform purpose.\n\u2022 Implemented new UI and features for over 10K+ users.\n\u2022 Used BLoC design pattern as the foundation of development process.\n\u2022 Wrote Flutter unit tests to ensure the functionality of the WiZ V2 app.\n\u2022 Experienced with RESTful API concepts and SQLite database.\n\u2022 Involved in an agile development environment with different teams for sprint planning, refinement, grooming, and daily stand-up meetings.",p,"Signify",q)],A.a5("t<md>"))})
 s($,"aOj","axn",()=>{var q=null
 return A.aBM(B.eF,B.Gt,A.aA4(A.Yt(q,q,A.aBw(new A.ajz(),t._),q,q,q,q,B.VG,q,q,q,q,q,B.VH,q,q,q,q,q,q,q,q)),A.G0(B.k,q,B.em))})
 s($,"aOi","axm",()=>{var q=null,p=A.G0(B.k,q,B.em)
